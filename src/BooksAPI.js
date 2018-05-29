@@ -18,7 +18,7 @@ export const get = (bookId) =>
     .then(data => data.book)
 
 export const getAll = () =>
-  fetch(`${api}/books`, { headers })
+  fetch(`${api}/books`, { headers }).catch((error)=>console.log("sranjeeee"))
     .then(res => res.json())
     .then(data => data.books)
 
